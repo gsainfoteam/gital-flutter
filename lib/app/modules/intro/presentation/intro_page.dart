@@ -11,29 +11,39 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SvgPicture.asset(
-              'assets/logos/graduation-hat.svg',
-              width: 100,
-              height: 100,
-            ),
-            const SizedBox(height: 12),
-            const Text(
-              'GITAL',
-              style: TextStyle(
-                fontSize: 48,
-                fontWeight: FontWeight.w900,
-                fontFamily: 'Pretendard',
-                color: Palette.primary,
-                height: 1.2,
-                letterSpacing: -1,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/logos/graduation-hat.svg',
+                      width: 100,
+                      height: 100,
+                    ),
+                    const SizedBox(height: 12),
+                    const Text(
+                      'GITAL',
+                      style: TextStyle(
+                        fontSize: 48,
+                        fontWeight: FontWeight.w900,
+                        fontFamily: 'Pretendard',
+                        color: Palette.primary,
+                        height: 1.2,
+                        letterSpacing: -1,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            GitalButton.onlyText(text: '시작하기', onTap: () {}),
-          ],
+              GitalButton.onlyText(text: '시작하기', onTap: () {}),
+            ],
+          ),
         ),
       ),
     );
