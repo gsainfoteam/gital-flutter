@@ -72,9 +72,13 @@ class MainBottomNavigationPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 12),
-                GitalButton.onlyIcon(
-                  icon: Assets.icons.plus.svg(),
-                  onTap: () {},
+                SizedBox(
+                  height: 64,
+                  width: 64,
+                  child: GitalButton.onlyIcon(
+                    icon: Assets.icons.plus.svg(),
+                    onTap: () {},
+                  ),
                 ),
               ],
             ),
