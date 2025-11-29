@@ -14,6 +14,58 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/PretendardVariable.ttf
+  String get pretendardVariable => 'assets/fonts/PretendardVariable.ttf';
+
+  /// List of all assets
+  List<String> get values => [pretendardVariable];
+}
+
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/plus.svg
+  SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
+
+  /// File path: assets/icons/selected-graduation-hat.svg
+  SvgGenImage get selectedGraduationHat =>
+      const SvgGenImage('assets/icons/selected-graduation-hat.svg');
+
+  /// File path: assets/icons/selected-home.svg
+  SvgGenImage get selectedHome =>
+      const SvgGenImage('assets/icons/selected-home.svg');
+
+  /// File path: assets/icons/selected-user.svg
+  SvgGenImage get selectedUser =>
+      const SvgGenImage('assets/icons/selected-user.svg');
+
+  /// File path: assets/icons/unselected-graduation-hat.svg
+  SvgGenImage get unselectedGraduationHat =>
+      const SvgGenImage('assets/icons/unselected-graduation-hat.svg');
+
+  /// File path: assets/icons/unselected-home.svg
+  SvgGenImage get unselectedHome =>
+      const SvgGenImage('assets/icons/unselected-home.svg');
+
+  /// File path: assets/icons/unselected-user.svg
+  SvgGenImage get unselectedUser =>
+      const SvgGenImage('assets/icons/unselected-user.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [
+    plus,
+    selectedGraduationHat,
+    selectedHome,
+    selectedUser,
+    unselectedGraduationHat,
+    unselectedHome,
+    unselectedUser,
+  ];
+}
+
 class $AssetsLogosGen {
   const $AssetsLogosGen();
 
@@ -28,6 +80,8 @@ class $AssetsLogosGen {
 class Assets {
   const Assets._();
 
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsLogosGen logos = $AssetsLogosGen();
 }
 
