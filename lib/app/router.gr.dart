@@ -12,7 +12,7 @@
 import 'package:auto_route/auto_route.dart' as _i6;
 import 'package:gital_flutter/app/modules/analysis/presentation/pages/analysis_page.dart'
     as _i1;
-import 'package:gital_flutter/app/modules/home/presentation/home_page.dart'
+import 'package:gital_flutter/app/modules/home/presentation/pages/home_page.dart'
     as _i2;
 import 'package:gital_flutter/app/modules/intro/presentation/intro_page.dart'
     as _i3;
