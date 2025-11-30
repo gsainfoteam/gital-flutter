@@ -34,6 +34,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/plus.svg
   SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
 
+  /// File path: assets/icons/search.svg
+  SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
+
   /// File path: assets/icons/selected-graduation-hat.svg
   SvgGenImage get selectedGraduationHat =>
       const SvgGenImage('assets/icons/selected-graduation-hat.svg');
@@ -66,6 +69,7 @@ class $AssetsIconsGen {
   List<SvgGenImage> get values => [
     checkCircle,
     plus,
+    search,
     selectedGraduationHat,
     selectedHome,
     selectedUser,
