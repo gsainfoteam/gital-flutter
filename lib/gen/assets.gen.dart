@@ -27,8 +27,15 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/check-circle.svg
+  SvgGenImage get checkCircle =>
+      const SvgGenImage('assets/icons/check-circle.svg');
+
   /// File path: assets/icons/plus.svg
   SvgGenImage get plus => const SvgGenImage('assets/icons/plus.svg');
+
+  /// File path: assets/icons/search.svg
+  SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
 
   /// File path: assets/icons/selected-graduation-hat.svg
   SvgGenImage get selectedGraduationHat =>
@@ -60,7 +67,9 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [
+    checkCircle,
     plus,
+    search,
     selectedGraduationHat,
     selectedHome,
     selectedUser,

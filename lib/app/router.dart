@@ -15,5 +15,6 @@ class AppRouter extends RootStackRouter {
         AutoRoute(path: 'user', page: UserRoute.page), // 임시
       ],
     ),
+    AutoRoute(path: '/plus', page: PlusRoute.page),
   ];
 }
