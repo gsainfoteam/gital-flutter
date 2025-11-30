@@ -20,10 +20,7 @@ class SemesterSelector extends StatefulWidget {
 }
 
 class _SemesterSelectorState extends State<SemesterSelector> {
-  // 1. 상태 관리: 현재 선택된 학기
   late String _selectedTerm;
-
-  // 2. 데이터: 선택 가능한 학기 목록
   late List<String> _termList;
 
   @override
@@ -45,6 +42,14 @@ class _SemesterSelectorState extends State<SemesterSelector> {
     super.didUpdateWidget(oldWidget);
     if (!listEquals(widget.termList, oldWidget.termList)) {
       _termList = List<String>.from(widget.termList);
+
+      if (_termList.isEmpty) {
+        _termList = [widget.initialTerm];
+      }
+
+      if (!_termList.contains(_selectedTerm)) {
+        _selectedTerm = _termList.first;
+      }
     }
 
     if (widget.initialTerm != oldWidget.initialTerm &&
