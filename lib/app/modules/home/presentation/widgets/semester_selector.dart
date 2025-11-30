@@ -58,7 +58,6 @@ class _SemesterSelectorState extends State<SemesterSelector> {
   Widget build(BuildContext context) {
     return PopupMenuButton<String>(
       offset: const Offset(0, 45),
-      position: PopupMenuPosition.under,
       elevation: 2,
       color: Colors.white,
       shape: RoundedRectangleBorder(
