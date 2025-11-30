@@ -19,13 +19,10 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              // 1. 학기 선택
               const SemesterSelector(),
               const SizedBox(height: 28),
-              // 2. [수정됨] 정보 요약 위젯으로 깔끔하게 교체!
               const SemesterSummaryInfo(totalCredit: 18, gpa: 4.23),
 
-              // 3. 메인 콘텐츠
               Expanded(
                 child: Center(
                   child: Text(
