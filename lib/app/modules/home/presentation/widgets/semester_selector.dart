@@ -28,7 +28,9 @@ class _SemesterSelectorState extends State<SemesterSelector> {
     super.initState();
     _termList = List<String>.from(widget.termList);
     if (_termList.isEmpty) {
-      _termList = [widget.initialTerm];
+      _termList = widget.initialTerm.isNotEmpty
+          ? [widget.initialTerm]
+          : ['학기/강의를 선택하세요'];
     }
 
     _selectedTerm =
