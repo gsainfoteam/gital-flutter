@@ -42,6 +42,10 @@ class $AssetsIconsGen {
   SvgGenImage get selectedUser =>
       const SvgGenImage('assets/icons/selected-user.svg');
 
+  /// File path: assets/icons/selector-vertical.svg
+  SvgGenImage get selectorVertical =>
+      const SvgGenImage('assets/icons/selector-vertical.svg');
+
   /// File path: assets/icons/unselected-graduation-hat.svg
   SvgGenImage get unselectedGraduationHat =>
       const SvgGenImage('assets/icons/unselected-graduation-hat.svg');
@@ -60,6 +64,7 @@ class $AssetsIconsGen {
     selectedGraduationHat,
     selectedHome,
     selectedUser,
+    selectorVertical,
     unselectedGraduationHat,
     unselectedHome,
     unselectedUser,

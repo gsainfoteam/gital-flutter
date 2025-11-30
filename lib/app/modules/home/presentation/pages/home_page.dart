@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:gital_flutter/app/modules/common/presentation/widgets/gital_button.dart';
+import 'package:gital_flutter/app/modules/home/presentation/widgets/semester_selector.dart';
 import 'package:gital_flutter/app/values/palette.dart';
 
 @RoutePage()
@@ -15,33 +14,24 @@ class HomePage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
+              SemesterSelector(),
               Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SvgPicture.asset(
-                      'assets/logos/graduation-hat.svg',
-                      width: 100,
-                      height: 100,
+                child: Center(
+                  child: Text(
+                    '아직 강의가 없습니다!',
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w700,
+                      fontFamily: 'Pretendard',
+                      color: Palette.foregroundMutedBlack,
+                      height: 1.5,
                     ),
-                    const SizedBox(height: 12),
-                    const Text(
-                      'GITAL',
-                      style: TextStyle(
-                        fontSize: 48,
-                        fontWeight: FontWeight.w900,
-                        fontFamily: 'Pretendard',
-                        color: Palette.primary,
-                        height: 1.2,
-                        letterSpacing: -1,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-              GitalButton.onlyText(text: '시작하기', onTap: () {}),
             ],
           ),
         ),
